@@ -7,25 +7,25 @@ const services = [
     icon: Truck,
     title: "Nákladní doprava",
     description: "Vnitrostátní i mezinárodní přeprava s moderní flotilou vozidel.",
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800&h=600"
   },
   {
     icon: Globe,
     title: "Mezinárodní přeprava",
     description: "Spolehlivá přeprava po celé Evropě s důrazem na včasné dodání.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800&h=600"
   },
   {
     icon: Shield,
     title: "Pojištěný náklad",
     description: "Komplexní pojištění přepravovaného zboží pro vaši jistotu.",
-    image: "https://images.unsplash.com/photo-1605559911160-a3d95d213904?auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80&w=800&h=600"
   },
   {
     icon: Clock,
     title: "Expresní služby",
     description: "Rychlá přeprava pro urgentní zásilky s garantovaným časem dodání.",
-    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1637763723578-79a4ca9749f8?auto=format&fit=crop&q=80&w=800&h=600"
   },
 ];
 
