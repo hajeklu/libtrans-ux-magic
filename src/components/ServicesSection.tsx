@@ -7,21 +7,25 @@ const services = [
     icon: Truck,
     title: "Nákladní doprava",
     description: "Vnitrostátní i mezinárodní přeprava s moderní flotilou vozidel.",
+    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80"
   },
   {
     icon: Globe,
     title: "Mezinárodní přeprava",
     description: "Spolehlivá přeprava po celé Evropě s důrazem na včasné dodání.",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
   },
   {
     icon: Shield,
     title: "Pojištěný náklad",
     description: "Komplexní pojištění přepravovaného zboží pro vaši jistotu.",
+    image: "https://images.unsplash.com/photo-1605559911160-a3d95d213904?auto=format&fit=crop&q=80"
   },
   {
     icon: Clock,
     title: "Expresní služby",
     description: "Rychlá přeprava pro urgentní zásilky s garantovaným časem dodání.",
+    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80"
   },
 ];
 
@@ -42,17 +46,26 @@ export const ServicesSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="p-6 hover:shadow-lg transition-shadow duration-300 border-libtrans-100"
+              className="group overflow-hidden hover:shadow-lg transition-all duration-300 border-libtrans-100"
             >
-              <div className="h-12 w-12 bg-libtrans-50 rounded-lg flex items-center justify-center mb-4">
-                <service.icon className="h-6 w-6 text-libtrans-700" />
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
-              <h3 className="text-xl font-semibold text-libtrans-900 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-libtrans-600">
-                {service.description}
-              </p>
+              <div className="p-6">
+                <div className="h-12 w-12 bg-libtrans-50 rounded-lg flex items-center justify-center mb-4">
+                  <service.icon className="h-6 w-6 text-libtrans-700" />
+                </div>
+                <h3 className="text-xl font-semibold text-libtrans-900 mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-libtrans-600">
+                  {service.description}
+                </p>
+              </div>
             </Card>
           ))}
         </div>
