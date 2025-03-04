@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight, Truck } from "lucide-react";
 
 export const HeroSection = () => {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-libtrans-50 to-libtrans-100 pt-20">
       <div className="absolute inset-0 z-0">
@@ -35,6 +42,7 @@ export const HeroSection = () => {
             <Button
               size="lg"
               className="bg-libtrans-800 hover:bg-libtrans-900 text-white"
+              onClick={() => scrollToSection('contact')}
             >
               Nezávazná poptávka
               <ChevronRight className="ml-2 h-4 w-4" />
@@ -44,6 +52,7 @@ export const HeroSection = () => {
               variant="outline"
               size="lg"
               className="border-libtrans-300 text-libtrans-800 hover:bg-libtrans-50"
+              onClick={() => scrollToSection('services')}
             >
               Naše služby
             </Button>

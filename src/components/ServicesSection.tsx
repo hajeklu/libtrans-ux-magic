@@ -30,7 +30,7 @@ const services = [
 
 export const ServicesSection = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-libtrans-50">
+    <section id="services" className="py-24 bg-gradient-to-b from-white to-libtrans-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-up">
           <span className="inline-block px-4 py-1 mb-4 text-libtrans-700 bg-libtrans-100 rounded-full text-sm font-medium">
