@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -25,8 +26,8 @@ export const ContactSection = () => {
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="relative space-y-12 bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-100">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4 group hover:scale-105 transition-transform duration-300">
+            <div className="space-y-8 flex flex-col items-center text-center">
+              <div className="flex flex-col items-center space-y-4 group hover:scale-105 transition-transform duration-300">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-libtrans-100 to-libtrans-200">
                   <MapPin className="w-6 h-6 text-libtrans-800" />
                 </div>
@@ -40,7 +41,7 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 group hover:scale-105 transition-transform duration-300">
+              <div className="flex flex-col items-center space-y-4 group hover:scale-105 transition-transform duration-300">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-libtrans-100 to-libtrans-200">
                   <Phone className="w-6 h-6 text-libtrans-800" />
                 </div>
@@ -69,7 +70,7 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 group hover:scale-105 transition-transform duration-300">
+              <div className="flex flex-col items-center space-y-4 group hover:scale-105 transition-transform duration-300">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-libtrans-100 to-libtrans-200">
                   <Mail className="w-6 h-6 text-libtrans-800" />
                 </div>
@@ -89,7 +90,7 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 group hover:scale-105 transition-transform duration-300">
+              <div className="flex flex-col items-center space-y-4 group hover:scale-105 transition-transform duration-300">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-libtrans-100 to-libtrans-200">
                   <Building2 className="w-6 h-6 text-libtrans-800" />
                 </div>
