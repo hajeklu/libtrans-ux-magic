@@ -160,6 +160,12 @@ export const ContactSection = () => {
               </Button>
             </form>
             <div className="relative w-full h-[300px] mt-8 rounded-xl overflow-hidden bg-white">
+              <div className="absolute inset-0 pointer-events-none z-10">
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-l from-white via-transparent to-white opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white opacity-60" />
+              </div>
               <img
                 src="/lovable-uploads/a36fdfe2-d59d-4a1d-bd25-b4ef5a99929d.png"
                 alt="Mapa umístění firmy LibTrans Express"
