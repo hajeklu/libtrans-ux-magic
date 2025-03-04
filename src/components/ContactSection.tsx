@@ -1,10 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import emailjs from '@emailjs/browser';
+import { useToast } from "@/hooks/use-toast";
 
 export const ContactSection = () => {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Chyba",
+        description: "Prosím vyplňte všechna povinná pole",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Zde bude váš Service ID z EmailJS
+        'YOUR_TEMPLATE_ID', // Zde bude váš Template ID z EmailJS
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_name: 'LibTrans Express',
+          to_email: 'info@libtrans.cz'
+        },
+        'YOUR_PUBLIC_KEY' // Zde bude váš Public Key z EmailJS
+      );
+
+      toast({
+        title: "Odesláno",
+        description: "Vaše zpráva byla úspěšně odeslána. Budeme vás kontaktovat co nejdříve.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Chyba",
+        description: "Nepodařilo se odeslat zprávu. Prosím zkuste to znovu později.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-24 relative">
       <div className="absolute inset-0 overflow-hidden">
@@ -130,25 +201,33 @@ export const ContactSection = () => {
             <h3 className="text-2xl font-semibold text-gray-900 mb-8">
               Napište nám
             </h3>
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-900 block">
-                    Jméno
+                    Jméno *
                   </label>
                   <Input 
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     placeholder="Vaše jméno" 
                     className="bg-white/80 border-gray-200 focus:border-libtrans-200" 
+                    required
                   />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-900 block">
-                    Email
+                    Email *
                   </label>
                   <Input 
-                    type="email" 
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="vas@email.cz" 
                     className="bg-white/80 border-gray-200 focus:border-libtrans-200" 
+                    required
                   />
                 </div>
               </div>
@@ -158,6 +237,9 @@ export const ContactSection = () => {
                   Předmět
                 </label>
                 <Input 
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   placeholder="Předmět zprávy" 
                   className="bg-white/80 border-gray-200 focus:border-libtrans-200" 
                 />
@@ -165,20 +247,25 @@ export const ContactSection = () => {
               
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-900 block">
-                  Zpráva
+                  Zpráva *
                 </label>
                 <Textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Vaše zpráva..."
                   rows={6}
                   className="bg-white/80 border-gray-200 focus:border-libtrans-200 resize-none"
+                  required
                 />
               </div>
               
               <Button
                 type="submit"
+                disabled={isLoading}
                 className="w-full bg-libtrans-800 hover:bg-libtrans-900 text-white transition-colors"
               >
-                Odeslat zprávu
+                {isLoading ? "Odesílám..." : "Odeslat zprávu"}
               </Button>
             </form>
           </div>
