@@ -1,8 +1,9 @@
 
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Building2, BankNote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Card } from "@/components/ui/card";
 
 export const ContactSection = () => {
   return (
@@ -25,32 +26,76 @@ export const ContactSection = () => {
               Jsme tu pro vás. Neváhejte nás kontaktovat s jakýmkoliv dotazem ohledně našich služeb.
             </p>
             
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <Phone className="w-5 h-5 text-libtrans-700 mt-1" />
-                <div className="ml-4">
-                  <h3 className="font-medium text-libtrans-900">Telefon</h3>
-                  <p className="text-libtrans-600">+420 123 456 789</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="p-6 bg-white/95 backdrop-blur-sm">
+                <div className="flex items-start">
+                  <MapPin className="w-5 h-5 text-libtrans-700 mt-1" />
+                  <div className="ml-4">
+                    <h3 className="font-medium text-libtrans-900 mb-2">Adresa</h3>
+                    <p className="text-libtrans-600">
+                      LibTrans Express s.r.o.<br />
+                      Krásný Les 254<br />
+                      46401 Frýdlant
+                    </p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex items-start">
-                <Mail className="w-5 h-5 text-libtrans-700 mt-1" />
-                <div className="ml-4">
-                  <h3 className="font-medium text-libtrans-900">Email</h3>
-                  <p className="text-libtrans-600">info@libtrans.cz</p>
+              </Card>
+
+              <Card className="p-6 bg-white/95 backdrop-blur-sm">
+                <div className="flex items-start">
+                  <Building2 className="w-5 h-5 text-libtrans-700 mt-1" />
+                  <div className="ml-4">
+                    <h3 className="font-medium text-libtrans-900 mb-2">Identifikace</h3>
+                    <p className="text-libtrans-600">
+                      IČO: 08175039<br />
+                      DIČ: CZ08175039
+                    </p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex items-start">
-                <MapPin className="w-5 h-5 text-libtrans-700 mt-1" />
-                <div className="ml-4">
-                  <h3 className="font-medium text-libtrans-900">Adresa</h3>
-                  <p className="text-libtrans-600">
-                    Liberec, Česká republika
-                  </p>
+              </Card>
+
+              <Card className="p-6 bg-white/95 backdrop-blur-sm">
+                <div className="flex items-start">
+                  <Phone className="w-5 h-5 text-libtrans-700 mt-1" />
+                  <div className="ml-4">
+                    <h3 className="font-medium text-libtrans-900 mb-2">Telefon</h3>
+                    <div className="space-y-2">
+                      <p className="text-libtrans-600">
+                        <span className="font-medium">Luboš Hájek:</span><br />
+                        <a href="tel:+420602129636" className="hover:text-libtrans-700">+420 602 129 636</a>
+                      </p>
+                      <p className="text-libtrans-600">
+                        <span className="font-medium">Luboš Hájek ml.:</span><br />
+                        <a href="tel:+420725776260" className="hover:text-libtrans-700">+420 725 776 260</a>
+                      </p>
+                      <p className="text-libtrans-600">
+                        <span className="font-medium">Jaroslav Šírek:</span><br />
+                        <a href="tel:+420605700246" className="hover:text-libtrans-700">+420 605 700 246</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </Card>
+
+              <Card className="p-6 bg-white/95 backdrop-blur-sm">
+                <div className="flex items-start">
+                  <Mail className="w-5 h-5 text-libtrans-700 mt-1" />
+                  <div className="ml-4">
+                    <h3 className="font-medium text-libtrans-900 mb-2">Email</h3>
+                    <div className="space-y-1">
+                      <a href="mailto:info@libtrans.cz" className="block text-libtrans-600 hover:text-libtrans-700">
+                        info@libtrans.cz
+                      </a>
+                      <a href="mailto:ucetni@libtrans.cz" className="block text-libtrans-600 hover:text-libtrans-700">
+                        ucetni@libtrans.cz
+                      </a>
+                      <a href="mailto:lubos.hajek@libtrans.cz" className="block text-libtrans-600 hover:text-libtrans-700">
+                        lubos.hajek@libtrans.cz
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
           
