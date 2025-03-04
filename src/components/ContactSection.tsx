@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,8 +6,14 @@ import { Textarea } from "@/components/ui/textarea";
 
 export const ContactSection = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-24 relative">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-32 -left-32 w-64 h-64 rounded-full bg-libtrans-100/30 blur-3xl"></div>
+        <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-libtrans-50/20 blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/3 w-72 h-72 rounded-full bg-libtrans-200/20 blur-3xl"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Kontaktujte nás
@@ -19,10 +24,10 @@ export const ContactSection = () => {
         </div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div className="space-y-12">
+          <div className="relative space-y-12 bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-100">
             <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-libtrans-100">
+              <div className="flex items-start space-x-4 group hover:scale-105 transition-transform duration-300">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-libtrans-100 to-libtrans-200">
                   <MapPin className="w-6 h-6 text-libtrans-800" />
                 </div>
                 <div>
@@ -35,8 +40,8 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-libtrans-100">
+              <div className="flex items-start space-x-4 group hover:scale-105 transition-transform duration-300">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-libtrans-100 to-libtrans-200">
                   <Phone className="w-6 h-6 text-libtrans-800" />
                 </div>
                 <div>
@@ -64,8 +69,8 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-libtrans-100">
+              <div className="flex items-start space-x-4 group hover:scale-105 transition-transform duration-300">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-libtrans-100 to-libtrans-200">
                   <Mail className="w-6 h-6 text-libtrans-800" />
                 </div>
                 <div>
@@ -84,8 +89,8 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-libtrans-100">
+              <div className="flex items-start space-x-4 group hover:scale-105 transition-transform duration-300">
+                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-libtrans-100 to-libtrans-200">
                   <Building2 className="w-6 h-6 text-libtrans-800" />
                 </div>
                 <div>
@@ -99,7 +104,7 @@ export const ContactSection = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-sm p-8 lg:p-10">
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100 p-8 lg:p-10">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
               Napište nám
             </h3>
@@ -109,13 +114,13 @@ export const ContactSection = () => {
                   <label className="text-sm font-medium text-gray-900 mb-1 block">
                     Jméno
                   </label>
-                  <Input placeholder="Vaše jméno" className="bg-gray-50" />
+                  <Input placeholder="Vaše jméno" className="bg-white/80" />
                 </div>
                 <div>
                   <label className="text-sm font-medium text-gray-900 mb-1 block">
                     Email
                   </label>
-                  <Input type="email" placeholder="vas@email.cz" className="bg-gray-50" />
+                  <Input type="email" placeholder="vas@email.cz" className="bg-white/80" />
                 </div>
               </div>
               
@@ -123,7 +128,7 @@ export const ContactSection = () => {
                 <label className="text-sm font-medium text-gray-900 mb-1 block">
                   Předmět
                 </label>
-                <Input placeholder="Předmět zprávy" className="bg-gray-50" />
+                <Input placeholder="Předmět zprávy" className="bg-white/80" />
               </div>
               
               <div>
@@ -133,7 +138,7 @@ export const ContactSection = () => {
                 <Textarea
                   placeholder="Vaše zpráva..."
                   rows={4}
-                  className="bg-gray-50"
+                  className="bg-white/80"
                 />
               </div>
               
