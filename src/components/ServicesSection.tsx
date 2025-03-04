@@ -1,3 +1,4 @@
+
 import { Shield, Truck, Clock, Globe } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -6,25 +7,25 @@ const services = [
     icon: Truck,
     title: "Nákladní doprava",
     description: "Vnitrostátní i mezinárodní přeprava zajištěná naší moderní flotilou vozidel DAF.",
-    image: "/lovable-uploads/5cab5d7d-db32-4926-ac06-c918e9a95891.png"
+    image: "/lovable-uploads/5cab5d7d-db32-4926-ac06-c918e9a95891.png?format=webp&quality=80&w=800"
   },
   {
     icon: Globe,
     title: "Mezinárodní přeprava",
     description: "Spolehlivá přeprava po celé Evropě s důrazem na včasné dodání a sledování zásilek.",
-    image: "/lovable-uploads/3f6b0d38-ee32-473f-a8aa-1070123666c6.png"
+    image: "/lovable-uploads/3f6b0d38-ee32-473f-a8aa-1070123666c6.png?format=webp&quality=80&w=800"
   },
   {
     icon: Shield,
     title: "Pojištěný náklad",
     description: "Komplexní pojištění přepravovaného zboží pro vaši jistotu a bezpečnost vašeho majetku.",
-    image: "/lovable-uploads/3f3eeb0c-3b77-48bf-87fc-e1170b2f5830.png"
+    image: "/lovable-uploads/3f3eeb0c-3b77-48bf-87fc-e1170b2f5830.png?format=webp&quality=80&w=800"
   },
   {
     icon: Clock,
     title: "24/7 Servis",
     description: "Nepřetržitý provoz a pohotovostní služba pro okamžitou reakci na všechny vaše požadavky.",
-    image: "/lovable-uploads/d22cf6fb-9a08-49df-aa78-4080958c1428.png"
+    image: "/lovable-uploads/d22cf6fb-9a08-49df-aa78-4080958c1428.png?format=webp&quality=80&w=800"
   },
 ];
 

@@ -14,7 +14,7 @@ export const HeroSection = () => {
     <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-libtrans-50 to-libtrans-100">
       <div className="absolute inset-0 z-0">
         <img
-          src="/lovable-uploads/c65fa998-53bd-408e-b8df-cf67b1b4bb3f.png"
+          src="/lovable-uploads/c65fa998-53bd-408e-b8df-cf67b1b4bb3f.png?format=webp&quality=80&w=1920"
           alt="Nákladní vozy DAF"
           className="object-cover w-full h-full brightness-95 contrast-105"
         />
