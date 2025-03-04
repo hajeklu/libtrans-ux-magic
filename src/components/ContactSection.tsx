@@ -105,8 +105,13 @@ export const ContactSection = () => {
           </div>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100 p-8 lg:p-10">
-            <div className="relative w-full h-[300px] mb-8 rounded-xl overflow-hidden bg-white">
-              <div className="absolute inset-0 pointer-events-none z-10">
+            <a 
+              href="https://maps.app.goo.gl/un4VcBvKoDhQnKpu8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block relative w-full h-[300px] mb-8 rounded-xl overflow-hidden bg-white group"
+            >
+              <div className="absolute inset-0 pointer-events-none z-10 transition-opacity duration-300 group-hover:opacity-0">
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white opacity-60" />
                 <div className="absolute inset-0 bg-gradient-to-l from-white via-transparent to-white opacity-60" />
                 <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white opacity-60" />
@@ -115,9 +120,9 @@ export const ContactSection = () => {
               <img
                 src="/lovable-uploads/a36fdfe2-d59d-4a1d-bd25-b4ef5a99929d.png"
                 alt="Mapa umístění firmy LibTrans Express"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
-            </div>
+            </a>
 
             <h3 className="text-2xl font-semibold text-gray-900 mb-8">
               Napište nám
