@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -40,8 +41,8 @@ export const ContactSection = () => {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Zde bude váš Service ID z EmailJS
-        'YOUR_TEMPLATE_ID', // Zde bude váš Template ID z EmailJS
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -50,7 +51,7 @@ export const ContactSection = () => {
           to_name: 'LibTrans Express',
           to_email: 'info@libtrans.cz'
         },
-        'YOUR_PUBLIC_KEY' // Zde bude váš Public Key z EmailJS
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       toast({
