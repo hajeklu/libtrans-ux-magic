@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -138,7 +137,7 @@ export const ContactSection = () => {
                 </label>
                 <Textarea
                   placeholder="Vaše zpráva..."
-                  rows={4}
+                  rows={6}
                   className="bg-white/80"
                 />
               </div>
