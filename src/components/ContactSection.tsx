@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -44,12 +43,11 @@ export const ContactSection = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject || "Nová zpráva z kontaktního formuláře",
           message: formData.message,
           to_name: 'LibTrans Express',
-          to_email: 'info@libtrans.cz'
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
