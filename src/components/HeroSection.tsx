@@ -11,7 +11,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-libtrans-50 to-libtrans-100 pt-20">
+    <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-libtrans-50 to-libtrans-100">
       <div className="absolute inset-0 z-0">
         <img
           src="/lovable-uploads/c65fa998-53bd-408e-b8df-cf67b1b4bb3f.png"
