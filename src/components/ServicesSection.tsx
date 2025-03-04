@@ -28,7 +28,7 @@ const services = [
   },
 ];
 
-export const ServicesSection = () => {
+const ServicesSection = () => {
   return (
     <section id="services" className="py-24 bg-gradient-to-b from-white to-libtrans-50">
       <div className="container mx-auto px-4">
@@ -77,3 +77,5 @@ export const ServicesSection = () => {
     </section>
   );
 };
+
+export default ServicesSection;

@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import emailjs from '@emailjs/browser';
 import { useToast } from "@/hooks/use-toast";
 
-export const ContactSection = () => {
+const ContactSection = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -273,3 +273,5 @@ export const ContactSection = () => {
     </section>
   );
 };
+
+export default ContactSection;
