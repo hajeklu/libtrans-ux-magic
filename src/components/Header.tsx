@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 
 export const Header = () => {
   return (
@@ -20,13 +20,9 @@ export const Header = () => {
           <div className="flex items-center space-x-3 md:space-x-6">
             {/* Desktop version */}
             <div className="hidden md:flex items-center divide-x divide-libtrans-200">
-              <div className="flex items-center space-x-2 text-sm text-libtrans-600 pr-6">
-                <MapPin className="h-4 w-4" />
-                <span>Liberec</span>
-              </div>
               <a 
                 href="mailto:info@libtrans.cz" 
-                className="flex items-center space-x-2 text-sm text-libtrans-600 hover:text-libtrans-900 transition-colors px-6"
+                className="flex items-center space-x-2 text-sm text-libtrans-600 hover:text-libtrans-900 transition-colors pr-6"
               >
                 <Mail className="h-4 w-4" />
                 <span>info@libtrans.cz</span>
@@ -42,10 +38,6 @@ export const Header = () => {
 
             {/* Mobile version */}
             <div className="flex md:hidden items-center bg-gray-50 rounded-full px-4 py-2 space-x-4">
-              <div className="flex items-center space-x-1.5 text-sm text-libtrans-600">
-                <MapPin className="h-4 w-4" />
-                <span>Liberec</span>
-              </div>
               <a 
                 href="mailto:info@libtrans.cz" 
                 className="flex items-center space-x-1.5 text-sm text-libtrans-600 hover:text-libtrans-900"
@@ -67,3 +59,4 @@ export const Header = () => {
     </header>
   );
 };
+
