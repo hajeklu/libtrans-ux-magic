@@ -17,22 +17,23 @@ export const Header = () => {
           </Link>
 
           {/* Contact info */}
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-3 md:space-x-6">
             <a 
               href="tel:+420725776260" 
-              className="flex items-center space-x-2 text-sm text-libtrans-700 hover:text-libtrans-900"
+              className="flex items-center space-x-1 md:space-x-2 text-sm text-libtrans-700 hover:text-libtrans-900"
             >
               <Phone className="h-4 w-4" />
-              <span>+420 725 776 260</span>
+              <span className="hidden md:inline">+420 725 776 260</span>
+              <span className="md:hidden">Zavolat</span>
             </a>
             <a 
               href="mailto:info@libtrans.cz" 
-              className="flex items-center space-x-2 text-sm text-libtrans-700 hover:text-libtrans-900"
+              className="hidden md:flex items-center space-x-2 text-sm text-libtrans-700 hover:text-libtrans-900"
             >
               <Mail className="h-4 w-4" />
               <span>info@libtrans.cz</span>
             </a>
-            <div className="flex items-center space-x-2 text-sm text-libtrans-700">
+            <div className="hidden md:flex items-center space-x-2 text-sm text-libtrans-700">
               <MapPin className="h-4 w-4" />
               <span>Liberec</span>
             </div>
