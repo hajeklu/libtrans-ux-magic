@@ -1,10 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Truck } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-libtrans-50 to-libtrans-100">
+    <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-libtrans-50 to-libtrans-100 pt-20">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1586528116493-d654c66d388b?auto=format&fit=crop&q=80&w=2000"
