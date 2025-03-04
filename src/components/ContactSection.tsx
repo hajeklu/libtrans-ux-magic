@@ -105,6 +105,20 @@ export const ContactSection = () => {
           </div>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100 p-8 lg:p-10">
+            <div className="relative w-full h-[300px] mb-8 rounded-xl overflow-hidden bg-white">
+              <div className="absolute inset-0 pointer-events-none z-10">
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-l from-white via-transparent to-white opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white opacity-60" />
+              </div>
+              <img
+                src="/lovable-uploads/a36fdfe2-d59d-4a1d-bd25-b4ef5a99929d.png"
+                alt="Mapa umístění firmy LibTrans Express"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             <h3 className="text-2xl font-semibold text-gray-900 mb-8">
               Napište nám
             </h3>
@@ -159,19 +173,6 @@ export const ContactSection = () => {
                 Odeslat zprávu
               </Button>
             </form>
-            <div className="relative w-full h-[300px] mt-8 rounded-xl overflow-hidden bg-white">
-              <div className="absolute inset-0 pointer-events-none z-10">
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white opacity-60" />
-                <div className="absolute inset-0 bg-gradient-to-l from-white via-transparent to-white opacity-60" />
-                <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white opacity-60" />
-                <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white opacity-60" />
-              </div>
-              <img
-                src="/lovable-uploads/a36fdfe2-d59d-4a1d-bd25-b4ef5a99929d.png"
-                alt="Mapa umístění firmy LibTrans Express"
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </div>
