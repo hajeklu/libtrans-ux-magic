@@ -6,26 +6,26 @@ const services = [
   {
     icon: Truck,
     title: "Nákladní doprava",
-    description: "Vnitrostátní i mezinárodní přeprava s moderní flotilou vozidel.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800&h=600"
+    description: "Vnitrostátní i mezinárodní přeprava s moderní flotilou vozidel DAF.",
+    image: "/lovable-uploads/5cab5d7d-db32-4926-ac06-c918e9a95891.png"
   },
   {
     icon: Globe,
     title: "Mezinárodní přeprava",
     description: "Spolehlivá přeprava po celé Evropě s důrazem na včasné dodání.",
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800&h=600"
+    image: "/lovable-uploads/3f6b0d38-ee32-473f-a8aa-1070123666c6.png"
   },
   {
     icon: Shield,
     title: "Pojištěný náklad",
     description: "Komplexní pojištění přepravovaného zboží pro vaši jistotu.",
-    image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80&w=800&h=600"
+    image: "/lovable-uploads/3f3eeb0c-3b77-48bf-87fc-e1170b2f5830.png"
   },
   {
     icon: Clock,
-    title: "Expresní služby",
-    description: "Rychlá přeprava pro urgentní zásilky s garantovaným časem dodání.",
-    image: "https://images.unsplash.com/photo-1637763723578-79a4ca9749f8?auto=format&fit=crop&q=80&w=800&h=600"
+    title: "24/7 Servis",
+    description: "Nepřetržitý provoz a pohotovostní služba pro naše klienty.",
+    image: "/lovable-uploads/d22cf6fb-9a08-49df-aa78-4080958c1428.png"
   },
 ];
 
@@ -38,7 +38,7 @@ export const ServicesSection = () => {
             Naše služby
           </h2>
           <p className="text-libtrans-600 max-w-2xl mx-auto">
-            Nabízíme komplexní řešení v oblasti nákladní dopravy a logistiky.
+            Nabízíme komplexní řešení v oblasti nákladní dopravy a logistiky s vlastním vozovým parkem DAF.
           </p>
         </div>
 
