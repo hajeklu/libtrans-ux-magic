@@ -24,13 +24,10 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: (id) => {
           if (id.includes('node_modules')) {
-            if (id.includes('react')) {
-              return 'vendor-react';
+            if (id.includes('@radix-ui') || id.includes('lucide-react')) {
+              return 'vendor-ui';
             }
             return 'vendor';
-          }
-          if (id.includes('components/ui')) {
-            return 'ui-components';
           }
         },
       },
