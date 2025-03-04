@@ -7,7 +7,11 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/logo.png" alt="Libtrans logo" className="h-12 w-auto bg-white rounded-lg p-1" />
+            <img 
+              src="/logo.png" 
+              alt="Libtrans logo" 
+              className="h-12 w-auto bg-white rounded-lg p-1" 
+            />
           </Link>
         </div>
       </div>
