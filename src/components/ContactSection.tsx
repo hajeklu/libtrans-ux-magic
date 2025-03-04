@@ -3,7 +3,6 @@ import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import LocationMap from "./LocationMap";
 
 export const ContactSection = () => {
   return (
@@ -160,7 +159,13 @@ export const ContactSection = () => {
                 Odeslat zprávu
               </Button>
             </form>
-            <LocationMap />
+            <div className="relative w-full h-[300px] mt-8 rounded-xl overflow-hidden bg-white">
+              <img
+                src="/lovable-uploads/a36fdfe2-d59d-4a1d-bd25-b4ef5a99929d.png"
+                alt="Mapa umístění firmy LibTrans Express"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
