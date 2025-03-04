@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Truck } from "lucide-react";
 
@@ -34,8 +33,11 @@ export const HeroSection = () => {
             Spolehlivá přeprava pro vás nebo vaší firmu
           </h1>
           
-          <p className="mt-6 text-xl text-libtrans-700 animate-fade-up">
-            Specializujeme se na vnitrostátní i mezinárodní přepravu zboží. Nabízíme komplexní logistické služby s důrazem na kvalitu a spolehlivost.
+          <p className="mt-6 text-xl text-libtrans-700 animate-fade-up relative">
+            <span className="relative z-10">
+              Specializujeme se na vnitrostátní i mezinárodní přepravu zboží. Nabízíme komplexní logistické služby s důrazem na kvalitu a spolehlivost.
+            </span>
+            <span className="absolute inset-0 bg-white/60 backdrop-blur-sm rounded" />
           </p>
           
           <div className="mt-8 flex flex-wrap gap-4 animate-fade-up">
