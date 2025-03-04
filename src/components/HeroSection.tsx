@@ -24,7 +24,7 @@ export const HeroSection = () => {
           </div>
           
           <h1 className="mt-6 text-5xl sm:text-6xl font-bold text-libtrans-900 animate-fade-up">
-            Spolehlivá přeprava pro váš byznys
+            Spolehlivá přeprava pro vás nebo vaší firmu
           </h1>
           
           <p className="mt-6 text-xl text-libtrans-700 animate-fade-up">
