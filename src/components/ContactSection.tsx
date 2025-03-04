@@ -105,6 +105,9 @@ export const ContactSection = () => {
           </div>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100 p-8 lg:p-10">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-8">
+              Kde nás najdete
+            </h3>
             <a 
               href="https://maps.app.goo.gl/un4VcBvKoDhQnKpu8"
               target="_blank"
