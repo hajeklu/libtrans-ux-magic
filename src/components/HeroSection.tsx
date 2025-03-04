@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Truck } from "lucide-react";
 
@@ -17,7 +18,7 @@ export const HeroSection = () => {
           alt="Nákladní vozy DAF"
           className="object-cover w-full h-full brightness-95 contrast-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent sm:from-white/95 sm:via-white/70 sm:to-transparent lg:from-white/95 lg:via-white/80 lg:to-transparent" style={{ width: '100%', backgroundSize: '200% 100%' }} />
       </div>
       
       <div className="container mx-auto px-4 z-10">
