@@ -1,5 +1,6 @@
+
 import React from "react";
-import { Mail, Phone, MapPin, Building2, Banknote } from "lucide-react";
+import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -27,11 +28,13 @@ export const ContactSection = () => {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="p-6 bg-white/95 backdrop-blur-sm h-full">
+              <Card className="p-6 bg-white/95 backdrop-blur-sm h-full transition-all duration-200 hover:shadow-lg hover:scale-[1.02]">
                 <div className="flex items-start space-x-4">
-                  <MapPin className="w-5 h-5 text-libtrans-700 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-medium text-libtrans-900 mb-2">Adresa</h3>
+                  <div className="rounded-full bg-libtrans-100 p-2">
+                    <MapPin className="w-5 h-5 text-libtrans-700" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-semibold text-libtrans-900 mb-3">Adresa</h3>
                     <p className="text-libtrans-600 text-sm leading-relaxed">
                       LibTrans Express s.r.o.<br />
                       Krásný Les 254<br />
@@ -41,40 +44,48 @@ export const ContactSection = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-white/95 backdrop-blur-sm h-full">
+              <Card className="p-6 bg-white/95 backdrop-blur-sm h-full transition-all duration-200 hover:shadow-lg hover:scale-[1.02]">
                 <div className="flex items-start space-x-4">
-                  <Building2 className="w-5 h-5 text-libtrans-700 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-medium text-libtrans-900 mb-2">Identifikace</h3>
-                    <p className="text-libtrans-600 text-sm leading-relaxed">
-                      IČO: 08175039<br />
-                      DIČ: CZ08175039
-                    </p>
+                  <div className="rounded-full bg-libtrans-100 p-2">
+                    <Building2 className="w-5 h-5 text-libtrans-700" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-semibold text-libtrans-900 mb-3">Identifikace</h3>
+                    <div className="space-y-1 text-sm">
+                      <p className="text-libtrans-600">
+                        <span className="font-medium">IČO:</span> 08175039
+                      </p>
+                      <p className="text-libtrans-600">
+                        <span className="font-medium">DIČ:</span> CZ08175039
+                      </p>
+                    </div>
                   </div>
                 </div>
               </Card>
 
-              <Card className="p-6 bg-white/95 backdrop-blur-sm h-full">
+              <Card className="p-6 bg-white/95 backdrop-blur-sm h-full transition-all duration-200 hover:shadow-lg hover:scale-[1.02]">
                 <div className="flex items-start space-x-4">
-                  <Phone className="w-5 h-5 text-libtrans-700 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-medium text-libtrans-900 mb-2">Telefon</h3>
+                  <div className="rounded-full bg-libtrans-100 p-2">
+                    <Phone className="w-5 h-5 text-libtrans-700" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-semibold text-libtrans-900 mb-3">Telefon</h3>
                     <div className="space-y-3 text-sm">
                       <div>
-                        <span className="font-medium text-libtrans-700 block">Luboš Hájek:</span>
-                        <a href="tel:+420602129636" className="text-libtrans-600 hover:text-libtrans-700">
+                        <p className="font-medium text-libtrans-700">Luboš Hájek</p>
+                        <a href="tel:+420602129636" className="text-libtrans-600 hover:text-libtrans-800 transition-colors">
                           +420 602 129 636
                         </a>
                       </div>
                       <div>
-                        <span className="font-medium text-libtrans-700 block">Luboš Hájek ml.:</span>
-                        <a href="tel:+420725776260" className="text-libtrans-600 hover:text-libtrans-700">
+                        <p className="font-medium text-libtrans-700">Luboš Hájek ml.</p>
+                        <a href="tel:+420725776260" className="text-libtrans-600 hover:text-libtrans-800 transition-colors">
                           +420 725 776 260
                         </a>
                       </div>
                       <div>
-                        <span className="font-medium text-libtrans-700 block">Jaroslav Šírek:</span>
-                        <a href="tel:+420605700246" className="text-libtrans-600 hover:text-libtrans-700">
+                        <p className="font-medium text-libtrans-700">Jaroslav Šírek</p>
+                        <a href="tel:+420605700246" className="text-libtrans-600 hover:text-libtrans-800 transition-colors">
                           +420 605 700 246
                         </a>
                       </div>
@@ -83,19 +94,21 @@ export const ContactSection = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-white/95 backdrop-blur-sm h-full">
+              <Card className="p-6 bg-white/95 backdrop-blur-sm h-full transition-all duration-200 hover:shadow-lg hover:scale-[1.02]">
                 <div className="flex items-start space-x-4">
-                  <Mail className="w-5 h-5 text-libtrans-700 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-medium text-libtrans-900 mb-2">Email</h3>
+                  <div className="rounded-full bg-libtrans-100 p-2">
+                    <Mail className="w-5 h-5 text-libtrans-700" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-semibold text-libtrans-900 mb-3">Email</h3>
                     <div className="space-y-2 text-sm">
-                      <a href="mailto:info@libtrans.cz" className="block text-libtrans-600 hover:text-libtrans-700">
+                      <a href="mailto:info@libtrans.cz" className="block text-libtrans-600 hover:text-libtrans-800 transition-colors">
                         info@libtrans.cz
                       </a>
-                      <a href="mailto:ucetni@libtrans.cz" className="block text-libtrans-600 hover:text-libtrans-700">
+                      <a href="mailto:ucetni@libtrans.cz" className="block text-libtrans-600 hover:text-libtrans-800 transition-colors">
                         ucetni@libtrans.cz
                       </a>
-                      <a href="mailto:lubos.hajek@libtrans.cz" className="block text-libtrans-600 hover:text-libtrans-700">
+                      <a href="mailto:lubos.hajek@libtrans.cz" className="block text-libtrans-600 hover:text-libtrans-800 transition-colors">
                         lubos.hajek@libtrans.cz
                       </a>
                     </div>
