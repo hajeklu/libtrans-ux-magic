@@ -18,7 +18,8 @@ export const HeroSection = () => {
           alt="Nákladní vozy DAF"
           className="object-cover w-full h-full brightness-95 contrast-105"
         />
-        <div className="absolute inset-0 bg-white/90 md:bg-gradient-to-r md:from-white/90 md:via-white/70 md:to-transparent md:w-[80%]" />
+        <div className="block md:hidden absolute inset-0 bg-white/90" />
+        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent w-[80%]" />
       </div>
       
       <div className="container mx-auto px-4 z-10">
