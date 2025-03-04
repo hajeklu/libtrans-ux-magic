@@ -27,17 +27,17 @@ export const Header = () => {
                 <Phone className="h-4 w-4" />
                 <span>+420 725 776 260</span>
               </a>
-              <div className="flex items-center space-x-2 text-sm text-libtrans-600 px-6">
-                <MapPin className="h-4 w-4" />
-                <span>Liberec</span>
-              </div>
               <a 
                 href="mailto:info@libtrans.cz" 
-                className="flex items-center space-x-2 text-sm text-libtrans-600 hover:text-libtrans-900 transition-colors pl-6"
+                className="flex items-center space-x-2 text-sm text-libtrans-600 hover:text-libtrans-900 transition-colors px-6"
               >
                 <Mail className="h-4 w-4" />
                 <span>info@libtrans.cz</span>
               </a>
+              <div className="flex items-center space-x-2 text-sm text-libtrans-600 pl-6">
+                <MapPin className="h-4 w-4" />
+                <span>Liberec</span>
+              </div>
             </div>
 
             {/* Mobile version */}
