@@ -21,30 +21,23 @@ export const Header = () => {
             {/* Desktop version */}
             <div className="hidden md:flex items-center divide-x divide-libtrans-200">
               <a 
-                href="mailto:info@libtrans.cz" 
-                className="flex items-center space-x-2 text-sm text-libtrans-600 hover:text-libtrans-900 transition-colors pr-6"
-              >
-                <Mail className="h-4 w-4" />
-                <span>info@libtrans.cz</span>
-              </a>
-              <a 
                 href="tel:+420725776260" 
-                className="flex items-center space-x-2 text-sm text-libtrans-600 hover:text-libtrans-900 transition-colors pl-6"
+                className="flex items-center space-x-2 text-sm text-libtrans-600 hover:text-libtrans-900 transition-colors pr-6"
               >
                 <Phone className="h-4 w-4" />
                 <span>+420 725 776 260</span>
               </a>
+              <a 
+                href="mailto:info@libtrans.cz" 
+                className="flex items-center space-x-2 text-sm text-libtrans-600 hover:text-libtrans-900 transition-colors pl-6"
+              >
+                <Mail className="h-4 w-4" />
+                <span>info@libtrans.cz</span>
+              </a>
             </div>
 
             {/* Mobile version */}
-            <div className="flex md:hidden items-center bg-gray-50 rounded-full px-4 py-2 space-x-4">
-              <a 
-                href="mailto:info@libtrans.cz" 
-                className="flex items-center space-x-1.5 text-sm text-libtrans-600 hover:text-libtrans-900"
-              >
-                <Mail className="h-4 w-4" />
-                <span>Napsat email</span>
-              </a>
+            <div className="flex md:hidden items-center bg-gray-50 rounded-full px-4 py-2">
               <a 
                 href="tel:+420725776260" 
                 className="flex items-center space-x-1.5 text-sm text-libtrans-600 hover:text-libtrans-900"
@@ -59,4 +52,3 @@ export const Header = () => {
     </header>
   );
 };
-
