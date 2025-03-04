@@ -1,7 +1,5 @@
-
 import { Shield, Truck, Clock, Globe } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 const services = [
   {
@@ -68,14 +66,9 @@ export const ServicesSection = () => {
                 <h3 className="text-xl font-semibold text-libtrans-900 mb-3 group-hover:text-libtrans-700 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-libtrans-600 mb-4">
+                <p className="text-libtrans-600">
                   {service.description}
                 </p>
-                <Button variant="ghost" className="text-libtrans-700 hover:text-libtrans-900 p-0 hover:bg-transparent group">
-                  <span className="relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-libtrans-700 after:origin-bottom-right after:transition-transform after:duration-300 group-hover:after:scale-x-100 group-hover:after:origin-bottom-left">
-                    Více informací
-                  </span>
-                </Button>
               </div>
             </Card>
           ))}
