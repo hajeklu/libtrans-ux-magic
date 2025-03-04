@@ -105,40 +105,50 @@ export const ContactSection = () => {
           </div>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100 p-8 lg:p-10">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-8">
               Napište nám
             </h3>
             <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-sm font-medium text-gray-900 mb-1 block">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-900 block">
                     Jméno
                   </label>
-                  <Input placeholder="Vaše jméno" className="bg-white/80" />
+                  <Input 
+                    placeholder="Vaše jméno" 
+                    className="bg-white/80 border-gray-200 focus:border-libtrans-200" 
+                  />
                 </div>
-                <div>
-                  <label className="text-sm font-medium text-gray-900 mb-1 block">
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-900 block">
                     Email
                   </label>
-                  <Input type="email" placeholder="vas@email.cz" className="bg-white/80" />
+                  <Input 
+                    type="email" 
+                    placeholder="vas@email.cz" 
+                    className="bg-white/80 border-gray-200 focus:border-libtrans-200" 
+                  />
                 </div>
               </div>
               
-              <div>
-                <label className="text-sm font-medium text-gray-900 mb-1 block">
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-900 block">
                   Předmět
                 </label>
-                <Input placeholder="Předmět zprávy" className="bg-white/80" />
+                <Input 
+                  placeholder="Předmět zprávy" 
+                  className="bg-white/80 border-gray-200 focus:border-libtrans-200" 
+                />
               </div>
               
-              <div>
-                <label className="text-sm font-medium text-gray-900 mb-1 block">
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-900 block">
                   Zpráva
                 </label>
                 <Textarea
                   placeholder="Vaše zpráva..."
                   rows={6}
-                  className="bg-white/80"
+                  className="bg-white/80 border-gray-200 focus:border-libtrans-200 resize-none"
                 />
               </div>
               
