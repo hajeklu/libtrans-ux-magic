@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import LocationMap from "./LocationMap";
 
 export const ContactSection = () => {
   return (
@@ -159,6 +160,7 @@ export const ContactSection = () => {
                 Odeslat zprávu
               </Button>
             </form>
+            <LocationMap />
           </div>
         </div>
       </div>
