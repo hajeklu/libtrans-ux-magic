@@ -20,7 +20,6 @@ export const ContactSection = () => {
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="space-y-12">
-            {/* Contact Info */}
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-libtrans-100">
