@@ -38,10 +38,10 @@ const ServicesSection = () => {
             Profesionální řešení
           </span>
           <h2 className="text-4xl font-bold text-libtrans-900 mb-4">
-            Naše služby
+            Libtrans - Naše dopravní služby
           </h2>
           <p className="text-libtrans-600 max-w-2xl mx-auto text-lg">
-            Poskytujeme kompletní logistické služby s vlastním moderním vozovým parkem DAF, který splňuje nejvyšší standardy kvality a bezpečnosti.
+            Poskytujeme kompletní logistické služby Libtrans s vlastním moderním vozovým parkem DAF, který splňuje nejvyšší standardy kvality a bezpečnosti pro nákladní dopravu.
           </p>
         </div>
 
@@ -56,8 +56,9 @@ const ServicesSection = () => {
                 <div className="absolute inset-0 bg-libtrans-900/20 group-hover:bg-libtrans-900/10 transition-all z-10"></div>
                 <img 
                   src={service.image} 
-                  alt={service.title}
+                  alt={`Libtrans ${service.title} - profesionální dopravní služby Liberec`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">

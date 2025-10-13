@@ -11,32 +11,33 @@ export const HeroSection = () => {
   };
 
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-libtrans-50 to-libtrans-100">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-libtrans-50 to-libtrans-100">
       <div className="absolute inset-0 z-0">
         <img
           src="/lovable-uploads/c65fa998-53bd-408e-b8df-cf67b1b4bb3f.png?format=webp&quality=80&w=1920"
-          alt="Nákladní vozy DAF"
+          alt="Libtrans nákladní vozy DAF - profesionální dopravní služby Liberec"
           className="object-cover w-full h-full brightness-95 contrast-105"
+          loading="eager"
         />
         <div className="block md:hidden absolute inset-0 bg-white/90" />
         <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent w-[80%]" />
       </div>
       
       <div className="container mx-auto px-4 z-10">
-        <div className="max-w-3xl">
+        <article className="max-w-3xl">
           <div className="animate-fade-down">
             <span className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-libtrans-100 text-libtrans-700">
-              <Truck className="w-4 h-4 mr-2" />
-              Profesionální dopravní služby
+              <Truck className="w-4 h-4 mr-2" aria-hidden="true" />
+              Profesionální dopravní služby Libtrans
             </span>
           </div>
           
           <h1 className="mt-6 text-5xl sm:text-6xl font-bold text-libtrans-900 animate-fade-up">
-            Spolehlivá přeprava pro vás nebo vaší firmu
+            Libtrans - Spolehlivá nákladní přeprava Liberec
           </h1>
           
           <p className="mt-6 text-xl text-libtrans-700 animate-fade-up">
-            Specializujeme se na vnitrostátní i mezinárodní přepravu zboží. Nabízíme komplexní logistické služby s důrazem na kvalitu a spolehlivost.
+            Libtrans Liberec - specializujeme se na vnitrostátní i mezinárodní přepravu zboží moderní flotilou DAF. Nabízíme komplexní logistické služby s důrazem na kvalitu, spolehlivost a pojištěný náklad.
           </p>
           
           <div className="mt-8 flex flex-wrap gap-4 animate-fade-up">
@@ -44,9 +45,10 @@ export const HeroSection = () => {
               size="lg"
               className="bg-libtrans-800 hover:bg-libtrans-900 text-white"
               onClick={() => scrollToSection('contact')}
+              aria-label="Kontaktovat Libtrans pro nezávaznou poptávku"
             >
               Nezávazná poptávka
-              <ChevronRight className="ml-2 h-4 w-4" />
+              <ChevronRight className="ml-2 h-4 w-4" aria-hidden="true" />
             </Button>
             
             <Button
@@ -54,13 +56,14 @@ export const HeroSection = () => {
               size="lg"
               className="border-libtrans-300 text-libtrans-800 hover:bg-libtrans-50"
               onClick={() => scrollToSection('services')}
+              aria-label="Zobrazit služby Libtrans"
             >
               Naše služby
             </Button>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
 

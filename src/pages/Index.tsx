@@ -17,15 +17,17 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <Suspense fallback={<SectionFallback />}>
-        <HeroSection />
-      </Suspense>
-      <Suspense fallback={<SectionFallback />}>
-        <ServicesSection />
-      </Suspense>
-      <Suspense fallback={<SectionFallback />}>
-        <ContactSection />
-      </Suspense>
+      <main>
+        <Suspense fallback={<SectionFallback />}>
+          <HeroSection />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <ServicesSection />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <ContactSection />
+        </Suspense>
+      </main>
     </div>
   );
 };

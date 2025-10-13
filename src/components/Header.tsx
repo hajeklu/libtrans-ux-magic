@@ -8,11 +8,13 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo section */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2" aria-label="Libtrans - Domovská stránka">
             <img 
               src="/logo.png" 
-              alt="Libtrans logo" 
-              className="h-10 w-auto" 
+              alt="Libtrans logo - nákladní doprava Liberec" 
+              className="h-10 w-auto"
+              width="120"
+              height="40"
             />
           </Link>
 
