@@ -105,7 +105,8 @@ const ContactSection = () => {
                   <p className="text-gray-600 leading-relaxed">
                     LibTrans Express s.r.o.<br />
                     Krásný Les 254<br />
-                    46401 Frýdlant
+                    46401 Frýdlant<br />
+                    <span className="text-sm italic">Nacházíme se blízko města Frýdlant</span>
                   </p>
                 </div>
               </div>
@@ -175,9 +176,12 @@ const ContactSection = () => {
           </div>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100 p-8 lg:p-10">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-8">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
               Kde nás najdete
             </h3>
+            <p className="text-gray-600 mb-8">
+              Nacházíme se blízko města Frýdlant, snadno dostupné pro zákazníky z Frýdlantu a okolí.
+            </p>
             <a 
               href="https://maps.app.goo.gl/un4VcBvKoDhQnKpu8"
               target="_blank"
